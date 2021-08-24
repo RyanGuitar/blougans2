@@ -115,7 +115,7 @@
     }
   }
 </style>
-<body class="content sans-serif" style="max-width:1000px">
+<body class="content sans-serif" style="max-width:1000px" onload="myFunction()">
   <!-- *** TODO: check general responsiveness *** -->
 
   <!--<div id="loader"></div>-->
@@ -354,17 +354,17 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 
 <script>
-  /* var myVar;
+  /* var myVar;*/
 
-    function myFunction() {
-      myVar = setTimeout(showPage, 100);
-    }*/
+  function myFunction() {
+    setTimeout(showPage, 100);
+  }
 
-  //  function showPage() {
-  //document.getElementById("loader").style.display = "none";
-  //document.getElementById("myDiv").style.display = "block";
-  w3.slideshow(".blougans", 1500);
-  // }
+  function showPage() {
+    //document.getElementById("loader").style.display = "none";
+    //document.getElementById("myDiv").style.display = "block";
+    w3.slideshow(".blougans", 1500);
+  }
 </script>
 
 </body>
