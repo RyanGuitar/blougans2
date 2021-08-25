@@ -50,11 +50,22 @@
       font-size: 38px!important;
     }
   }
+
+  #carousel {
+    width: 100vw;
+    height: 30vh;
+  }
+  .hide {
+    display: none;
+  }
 </style>
 <body class="content sans-serif" style="max-width:1000px" onload="showContent()">
   <!-- *** TODO: check general responsiveness *** -->
 
   <!--<div id="loader"></div>-->
+  <div>
+    <img src='' id="carousel" class="hide">
+  </div>
 
   <div style="display:none;" id="content">
 
@@ -233,19 +244,19 @@
 
     <!-- *** Carousel *** -->
     <div class="card-4" id="slideshow">
-      <img class="blougans" src="images/carousel/2.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/3.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/4.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/5.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/6.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/7.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/8.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/9.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/10.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/11.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/12.jpg" alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/13.jpg"alt="Blougans B&B">
-      <img class="blougans" src="images/carousel/14.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/2.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/3.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/4.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/5.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/6.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/7.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/8.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/9.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/10.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/11.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/12.jpg" alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/13.jpg"alt="Blougans B&B">
+      <img class="blougans hide" src="images/carousel/14.jpg" alt="Blougans B&B">
     </div>
     <hr>
 
@@ -288,41 +299,27 @@
 
   </div>
 
-  <img src="" id="test">
-
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-
   <script>
-    /* var myVar;*/
 
-    /* function myFunction() {
-    setTimeout(showPage, 100);
-  }*/
     function showContent() {
       document.getElementById("content").style.display = "block";
-      loadImage('images/parking.jpg', test)
+      let next = loadImages('images/carousel/14.jpg')
+
+      if (next) {
+        console.log(next)
+        loadImages('images/parking.jpg')
+      }
     }
 
-    // function showPage() {
-    //document.getElementById("loader").style.display = "none";
-    //document.getElementById("myDiv").style.display = "block";
-    //w3.slideshow(".blougans", 1500);
-    //  }
+    let image = document.getElementById('carousel')
 
-    //let slideshow = document.querySelector("#slideshow");
-    // let images = slideshow.querySelectorAll("img");
-
-    let test = document.getElementById('test')
-
-    async function loadImage(url, elem) {
-      return new Promise((resolve, reject) => {
-        elem.onload = () => resolve(elem);
-        elem.onerror = reject;
-        elem.src = url;
-      });
+    function loadImages(url) {
+      image.src = url
+      image.onload = () => {
+        image.classList.add('hide')
+      }
+      return image.complete
     }
-
-
 
   </script>
 
