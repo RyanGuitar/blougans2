@@ -43,7 +43,7 @@ img {
 }
 
 .sticker-gallery {
-  width: 85vw;
+  width: 80vw !important;
   aspect-ratio: 1024/683;
 }
 div.scrollmenu {
