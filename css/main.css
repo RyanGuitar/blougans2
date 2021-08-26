@@ -57,11 +57,8 @@ div.scrollmenu div {
   display: inline-block;
 }
 
-/*@media screen and (orientation:landscape) {
+@media screen and (orientation:landscape) {
   .sticker-gallery {
     width: 70vw;
   }
-  div.scrollmenu {
-    aspect-ratio: 1024/550;
-  }
-}*/
+}
