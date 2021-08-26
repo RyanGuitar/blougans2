@@ -44,13 +44,13 @@ img {
 
 .sticker-gallery {
   width: 85vw;
-  aspect-ratio: 1024/683;
+  aspect-ratio: 1188/792;
   object-fit:contain;
 }
 div.scrollmenu {
   display: flex;
   align-items: center;
-  aspect-ratio: 1024/600;
+  aspect-ratio: 1188/792;
   overflow: auto;
   white-space: nowrap;
 }
