@@ -45,7 +45,7 @@ img {
 .sticker-gallery {
   width: 85vw;
   aspect-ratio: 1188/792;
-  object-fit:contain;
+  padding:5px;
 }
 div.scrollmenu {
   display: flex;
