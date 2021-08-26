@@ -1,0 +1,67 @@
+html, body {
+  user-select: none;
+}
+img {
+  width: 100%;
+}
+.button {
+  border-radius: 9px;
+}
+#check {
+  border: 2px solid white;
+}
+@media screen and (max-width:3000px) and (min-width:600px) {
+  #map {
+    height: 600px;
+  }
+  .banner {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width:599px) and (min-width:350px) {
+  #map {
+    height: 500px;
+  }
+  #heading {
+    font-size: 38px!important;
+  }
+  .wifi {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width:349px) and (min-width:100px) {
+  #map {
+    height: 500px;
+  }
+  #heading {
+    font-size: 38px!important;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.sticker-gallery {
+  width: 85vw;
+  aspect-ratio: 1024/683;
+}
+div.scrollmenu {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1024/683;
+  overflow: auto;
+  white-space: nowrap;
+}
+div.scrollmenu div {
+  display: inline-block;
+}
+
+@media screen and (orientation:landscape) {
+  .sticker-gallery {
+    width: 70vw;
+  }
+  div.scrollmenu {
+    aspect-ratio: 1024/550;
+  }
+}
