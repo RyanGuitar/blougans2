@@ -18,20 +18,20 @@
 <meta property="og:image:width" content="1188" />
 <meta property="og:image:height" content="792" />
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
+<!--<meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://metatags.io/">
 <meta property="twitter:title" content="Blougans B&B">
 <meta property="twitter:description" content="A 4-star bed and breakfast in Gansbaai, the home of the Great Shark, in sunny South Africa.">
 <meta property="twitter:image" content="https://ryanguitar.github.io/blougans2/scroll.jpg">
 <meta property="og:image:width" content="1188" />
-<meta property="og:image:height" content="792" />
+<meta property="og:image:height" content="792" />-->
 
-<script src="https://kit.fontawesome.com/4ceafd138d.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4ceafd138d.js" crossorigin="anonymous" defer></script>
 <style>
-  #breakfast {
+  #breakfast, .breakfast {
     aspect-ratio: 615/809;
   }
-  #main, #jacuzzi, #parking {
+  #main, #jacuzzi, #parking, .mainSet {
     aspect-ratio: 1188/792;
   }
   #bar {
@@ -48,7 +48,7 @@
   }
 </style>
 
-<body class="sans-serif">
+<body class="sans-serif content" max-width="1200">
 
 
   <!-- *** Heading *** -->
@@ -60,24 +60,23 @@
 
   <!-- *** Breakfast Image *** -->
   <div class="card-4 display-container" id="breakfast">
-    <!--<a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>-->
-    <img src="images/breakfast-area.jpg" alt="front image Blougans B&B" style="border-radius:0" loading="lazy">
+    <img src="images/breakfast-area.jpg" alt="front image Blougans B&B" loading="lazy" class="breakfast">
   </div>
 
-
+<hr>
   <!-- *** Safe Stay Logo *** -->
   <div class="center panel padding-16 card-4" id="logo">
     <a href="https://site.nightsbridge.com/nightsbridge-safestays" target="_blank"><img src="images/safestay.png" alt="stay safe logo" class="padding" loading="lazy"></a>
   </div>
 
-
+<hr>
   <!-- *** Main table image *** -->
   <div class="card-4 display-container" id="main">
     <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-    <img src="images/main.jpg" alt="breakfast table Blougans B&B" style="border-radius:0" loading="lazy">
+    <img src="images/main.jpg" alt="main Blougans B&B" loading="lazy" class="mainSet">
   </div>
 
-
+<hr>
   <!-- *** wifi banner *** -->
   <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
     <i class="fas fa-wifi center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
@@ -86,7 +85,7 @@
     </div>
   </div>
 
-
+<hr>
   <!-- *** TODO: Add correct images Rooms *** -->
   <div class="card-4">
     <div class="container" id="rooms">
@@ -97,11 +96,12 @@
       </p>
     </div>
 
+    <hr>
     <div class="row-padding padding-16">
       <!-- *** Room 1 *** -->
       <div class="half margin-bottom">
         <div class="room card-4">
-          <img src="images/room1.jpg" alt="Room 1 Blougans B&B" loading="lazy">
+          <img src="images/room1.jpg" alt="Room 1 Blougans B&B" loading="lazy" class="roomImages">
         </div>
         <div class="container white">
           <h4>Room 1</h4>
@@ -115,7 +115,7 @@
       <!-- *** Room 2 *** -->
       <div class="half margin-bottom">
         <div class="room card-4">
-          <img src="images/room2.jpg" alt="Room 2 Blougans B&B" loading="lazy">
+          <img src="images/room2.jpg" alt="Room 2 Blougans B&B" loading="lazy" class="roomImages">
         </div>
         <div class="container white">
           <h4>Room 2</h4>
@@ -129,7 +129,7 @@
       <!-- *** Room 3 *** -->
       <div class="half margin-bottom">
         <div class="room card-4">
-          <img src="images/room3.jpg" alt="Room 3 Blougans B&B" loading="lazy">
+          <img src="images/room3.jpg" alt="Room 3 Blougans B&B" loading="lazy" class="roomImages">
         </div>
         <div class="container white">
           <h4>Room 3</h4>
@@ -143,7 +143,7 @@
       <!-- *** Room 4 *** -->
       <div class="half margin-bottom">
         <div class="room card-4">
-          <img src="images/room4.jpg" alt="Room 4 Blougans B&B" loading="lazy">
+          <img src="images/room4.jpg" alt="Room 4 Blougans B&B" loading="lazy" class="roomImages">
         </div>
         <div class="container white">
           <h4>Room 4</h4>
@@ -154,11 +154,10 @@
           <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme padding-8 medium">Book Now</a>
         </div>
       </div>
-
     </div>
   </div>
 
-
+<hr>
   <!-- *** Bar Banner *** -->
   <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
     <i class="fas fa-glass-cheers center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
@@ -167,14 +166,14 @@
     </div>
   </div>
 
-
+<hr>
   <!-- *** Bar Image *** -->
   <div class="card-4 display-container" id="bar">
     <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-    <img src="images/bar.jpg" alt="bar image Blougans B&B" loading="lazy">
+    <img src="images/bar.jpg" alt="bar image Blougans B&B" loading="lazy" class="mainSet">
   </div>
   <hr>
-
+<hr>
   <!-- *** About *** -->
   <div class="row-padding margin-bottom card-4 theme-l5" id="about">
     <div class="col l6 12 large">
@@ -210,9 +209,9 @@
   <!-- *** Jacuzzzi Image *** -->
   <div class="card-4 display-container" id="jacuzzi">
     <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-    <img src="images/jacuzzi.jpg" alt="jacuzzi outside Blougans B&B" loading="lazy">
+    <img src="images/jacuzzi.jpg" alt="jacuzzi outside Blougans B&B" loading="lazy" class="mainSet">
   </div>
-
+<hr>
 
   <!-- *** Payment Banner *** -->
   <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
@@ -221,7 +220,7 @@
       We Accept Card Payments.
     </div>
   </div>
-
+<hr>
   <!-- slider -->
   <div class="card-4 scrollmenu" id="slider"></div>
   <hr>
@@ -233,7 +232,7 @@
     <a href="tel:+27764102666" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 76 410 2666</a>
     <a href="mailto:beaurainlorette@yahoo.com" class="button block margin-bottom hover-theme" style="border-radius:0"><i class="far fa-envelope text-theme margin-right xlarge hover-hover"></i> beaurainlorette@yahoo.com</a>
   </div>
-
+<hr>
   <!-- *** Parking Banner *** -->
   <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
     <i class="fas fa-car center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
@@ -241,13 +240,13 @@
       Free Parking on Premises.
     </div>
   </div>
-
+<hr>
   <!-- *** Parking Image *** -->
   <div class="card-4 display-container" id="parking">
     <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-    <img src="images/parking.jpg" alt="parking Blougans B&B" loading="lazy">
+    <img src="images/parking.jpg" alt="parking Blougans B&B" loading="lazy" class="mainSet">
   </div>
-
+<hr>
   <!-- *** Footer *** -->
   <footer class="padding-16 theme-d4 center margin-top">
     <h5><a href="https://book.nightsbridge.com/29212" class="button">Book Now</a></h5>
