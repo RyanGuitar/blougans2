@@ -43,13 +43,14 @@ img {
 }
 
 .sticker-gallery {
-  width: 80vw !important;
-  aspect-ratio: 1024/683;
+  width: 85vw;
+  aspect-ratio: 1024/600;
+  object-fit:contain;
 }
 div.scrollmenu {
   display: flex;
   align-items: center;
-  aspect-ratio: 1024/683;
+  aspect-ratio: 1024/600;
   overflow: auto;
   white-space: nowrap;
 }
@@ -57,8 +58,8 @@ div.scrollmenu div {
   display: inline-block;
 }
 
-@media screen and (orientation:landscape) {
+/*@media screen and (orientation:landscape) {
   .sticker-gallery {
     width: 70vw;
   }
-}
+}*/
