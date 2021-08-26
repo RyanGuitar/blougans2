@@ -9,7 +9,7 @@ function Slider() {
     name, title
   } of images) {
     template += `
-    <div>
+    <div class="padding">
     <img src=${name} alt=${name} class="sticker-gallery sliderImages" loading="lazy">
     </div>`
 
