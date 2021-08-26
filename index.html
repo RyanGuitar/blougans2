@@ -1,327 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Blougans B&B</title>
 <meta charset="UTF-8">
-<meta name="description" content="Four star bed and breakfast accommodation in Gansbaai near the sea">
-<meta name="keywords" content="Accommodation, Bed, Breakfast, Gansbaai, Whales, Sharks, Great White">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="ahortcut icon" type="image/png" href="favicon.png">
+<title>Blougans B&B</title>
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/w3css-pro.css">
 <link rel="stylesheet" href="css/blue-theme.css">
+<link rel="ahortcut icon" type="image/png" href="favicon.png">
+<meta name="description" content="A 4-star bed and breakfast in Gansbaai, the home of the Great Shark, in sunny South Africa.">
+<meta name="keywords" content="Accommodation, Blougans, blougans, Bed, Breakfast, Gansbaai, Whales, Sharks, Great White">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Blougans B&B">
+<meta property="og:description" content="A 4-star bed and breakfast in Gansbaai, the home of the Great Shark, in sunny South Africa.">
+<meta property="og:image" content="https://ryanguitar.github.io/slider/scroll.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="672" />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Blougans B&B">
+<meta property="twitter:description" content="A 4-star bed and breakfast in Gansbaai, the home of the Great Shark, in sunny South Africa.">
+<meta property="twitter:image" content="https://ryanguitar.github.io/slider/scroll.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="672" />
+
+<script src="https://kit.fontawesome.com/4ceafd138d.js" crossorigin="anonymous"></script>
 <style>
-
-  html, body {
-    user-select: none;
+  #Breakfast {
+    aspect-ratio: 615/809;
   }
-  img {
-    width: 100%;
-    height: auto;
+  #main, #jacuzzi, #parking {
+    aspect-ratio: 1188/792;
   }
-  .button, img {
-    border-radius: 9px;
+  #bar {
+    aspect-ratio: 1024/683;
   }
-  #check {
-    border: 2px solid white;
+  #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 192/30;
   }
-@media screen and (max-width:3000px) and (min-width:600px) {
-    #map {
-      height: 600px;
-    }
-    .banner {
-      margin-top: 16px;
-    }
-  }
-@media screen and (max-width:599px) and (min-width:350px) {
-    #map {
-      height: 500px;
-    }
-    #heading {
-      font-size: 38px!important;
-    }
-    .wifi {
-      margin-top: 16px;
-    }
-  }
-@media screen and (max-width:349px) and (min-width:100px) {
-    #map {
-      height: 500px;
-    }
-    #heading {
-      font-size: 38px!important;
-    }
-  }
-
-  #carousel {
-    width: 100vw;
-    height: 30vh;
-  }
-  .hide {
-    display: none;
+  .room {
+    aspect-ratio: 910/683;
   }
 </style>
-<body class="content sans-serif" style="max-width:1000px" onload="showContent()">
-  <!-- *** TODO: check general responsiveness *** -->
 
-  <!--<div id="loader"></div>-->
-  <div>
-    <img src='' id="carousel" class="hide">
+<body class="sans-serif">
+
+
+  <!-- *** Heading *** -->
+  <div class="card-4">
+    <div class="serif center padding theme-d5 xxxlarge" id="heading">
+      Blougans B&B
+    </div>
   </div>
 
-  <div style="display:none;" id="content">
+  <!-- *** Breakfast Image *** -->
+  <div class="card-4 display-container" id="breakfast">
+    <!--<a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>-->
+    <img src="images/breakfast-area.jpg" alt="front image Blougans B&B" style="border-radius:0" loading="lazy">
+  </div>
 
-    <!-- *** Navigation Bar *** -->
-    <div class="bar large theme-l2">
-      <a href="#about" class="bar-item button mobile hover-theme">About</a>
-      <a href="#rooms" class="bar-item button mobile hover-theme">Rooms</a>
-      <a href="#contact" class="bar-item button mobile hover-theme">Contact</a>
-      <a href="#slideshow" class="bar-item button mobile hover-theme right text-white">Slideshow</a>
+
+  <!-- *** Safe Stay Logo *** -->
+  <div class="center panel padding-16 card-4" id="logo">
+    <a href="https://site.nightsbridge.com/nightsbridge-safestays" target="_blank"><img src="images/safestay.png" alt="stay safe logo" class="padding" loading="lazy"></a>
+  </div>
+
+
+  <!-- *** Main table image *** -->
+  <div class="card-4 display-container" id="main">
+    <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
+    <img src="images/main.jpg" alt="breakfast table Blougans B&B" style="border-radius:0" loading="lazy">
+  </div>
+
+
+  <!-- *** wifi banner *** -->
+  <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
+    <i class="fas fa-wifi center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
+    <div class="banner xlarge col s8 wifi">
+      Free Super Fast Wifi.
     </div>
+  </div>
 
-    <!-- *** Heading *** -->
-    <div class="card-4">
-      <div class="serif center padding theme-d5 xxxlarge" id="heading">
-        Blougans B&B
-      </div>
-    </div>
-    <hr>
 
-    <!-- *** Main Image *** -->
-    <div class="card-4 display-container">
-      <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-      <img src="images/breakfast-area.jpg" alt="front image Blougans B&B" style="border-radius:0" loading="lazy">
-    </div>
-    <hr>
-
-    <!-- *** Safe Stay Logo *** -->
-    <div class="center panel card-4 padding-16">
-      <a href="https://site.nightsbridge.com/nightsbridge-safestays" target="_blank"><img src="images/safestay.png" alt="stay safe logo" style="max-width:200px;height:auto" class="padding" loading="lazy"></a>
-    </div>
-    <hr>
-
-    <!-- *** Breakfast table image *** -->
-    <div class="card-4 display-container">
-      <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-      <img src="images/main.jpg" alt="breakfast table Blougans B&B" style="border-radius:0" loading="lazy">
-    </div>
-    <hr>
-
-    <!-- *** wifi banner *** -->
-    <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
-      <i class="fas fa-wifi center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
-      <div class="banner xlarge col s8 wifi">
-        Free Super Fast Wifi.
-      </div>
-    </div>
-    <hr>
-
-    <!-- *** TODO: Add correct images Rooms *** -->
-    <div class="card-4">
-      <div class="container" id="rooms">
-        <h3>Rooms</h3>
-        <p>
-          All rooms have en-suite facilities and air-conditioning. The rooms are also equipped with a bar fridge, built-in safe,
-          hair dryer and a coffee station.
-        </p>
-      </div>
-
-      <div class="row-padding padding-16">
-        <!-- *** Room 1 *** -->
-        <div class="half margin-bottom">
-          <img src="images/room1.jpg" alt="Room 1 Blougans B&B" class="card-4 lazyload">
-          <div class="container white">
-            <h4>Room 1</h4>
-            <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
-            <p class="large">
-              <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
-            </p>
-            <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme card-4 padding-8 medium">Book Now</a>
-          </div>
-        </div>
-        <!-- *** Room 2 *** -->
-        <div class="half margin-bottom">
-          <img src="images/room2.jpg" alt="Room 2 Blougans B&B" class="card-4 lazyload">
-          <div class="container white">
-            <h4>Room 2</h4>
-            <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
-            <p class="large">
-              <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
-            </p>
-            <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme card-4 padding-8 medium">Book Now</a>
-          </div>
-        </div>
-        <!-- *** Room 3 *** -->
-        <div class="half margin-bottom">
-          <img src="images/room3.jpg" alt="Room 3 Blougans B&B" class="card-4 lazyload">
-          <div class="container white">
-            <h4>Room 3</h4>
-            <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
-            <p class="large">
-              <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
-            </p>
-            <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme card-4 padding-8 medium">Book Now</a>
-          </div>
-        </div>
-        <!-- *** Room 4 *** -->
-        <div class="half margin-bottom">
-          <img src="images/room4.jpg" alt="Room 4 Blougans B&B" class="card-4 lazyload">
-          <div class="container white">
-            <h4>Room 4</h4>
-            <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
-            <p class="large">
-              <i class="fas fa-bath margin-right"></i><i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
-            </p>
-            <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme card-4 padding-8 medium">Book Now</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <hr>
-
-    <!-- *** Bar Banner *** -->
-    <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
-      <i class="fas fa-glass-cheers center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
-      <div class="banner xlarge col s8">
-        Licensed Bar On Premises.
-      </div>
-    </div>
-    <hr>
-
-    <!-- *** Bar Image *** -->
-    <div class="card-4 display-container">
-      <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-      <img src="images/bar.jpg" alt="bar image Blougans B&B" style="border-radius:0" loading="lazy">
-    </div>
-    <hr>
-
-    <!-- *** About *** -->
-    <div class="row-padding margin-bottom card-4 theme-l5" id="about">
-      <div class="col l6 12 large">
-        <h3>About</h3>
-        <p>
-          Blougans is an established bed and breakfast with a four star rating.
-          We are situated in Gansbaai, the home of the <i>Great White Shark.</i>
-          Your room leads out to a balcony overlooking the <i>Walker Bay Whale Nature Reserve.</i>
-        </p>
-        <p>
-          Here you can make yourself feel at home and enjoy all the sea has to offer.
-          A short walk from your room will take you to the sea where you can take a breath-taking walk along the coast.
-          In the one direction you will find the harbour which you can explore. Don't forget to try the fish and chips.
-          In the other direction you will find a pleasant beach where you can take a swim or work on your tan. You might get lucky and see whales playing up close.
-        </p>
-        <p>
-          Back at Blougans you can relax in the guest area with a few drinks and watch the sun set over the sea while braaing a steak on the coals. It is a good time to connect with family and friends back home over our super fast wifi network.
-        </p>
-      </div>
-      <!-- *** Map *** -->
-      <iframe
-        id="map"
-        height="100%"
-        alt="map Blougans B&B"
-        class="col l6 12 margin-bottom margin-top card-4"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCUWvaDWXVPmirhVlLIVH523Gtct-KWkWY
-        &q=17+Blougans+St,+Perlemoenbaai,+Gansbaai" allowfullscreen loading="lazy">
-      </iframe>
-    </div>
-    <hr>
-
-    <!-- *** Jacuzzzi Image *** -->
-    <div class="card-4 display-container">
-      <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-      <img src="images/jacuzzi.jpg" alt="jacuzzi outside Blougans B&B" style="border-radius:0" loading="lazy">
-    </div>
-    <hr>
-
-    <!-- *** Payment Banner *** -->
-    <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
-      <i class="fab fa-cc-mastercard center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
-      <div class="banner xlarge col s8">
-        We Accept Card Payments.
-      </div>
-    </div>
-    <hr>
-
-    <!-- *** Carousel *** -->
-    <div class="card-4" id="slideshow">
-      <img class="blougans hide" src="images/carousel/2.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/3.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/4.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/5.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/6.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/7.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/8.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/9.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/10.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/11.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/12.jpg" alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/13.jpg"alt="Blougans B&B">
-      <img class="blougans hide" src="images/carousel/14.jpg" alt="Blougans B&B">
-    </div>
-    <hr>
-
-    <!-- *** Contacts *** -->
-    <div class="row-padding margin-bottom large center card-4" id="contact">
-      <h3>Contact</h3>
-      <a href="tel:+27822185355" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 82 218 5355</a>
-      <a href="tel:+27716581291" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 71 658 1291</a>
-      <a href="tel:+27764102666" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 76 410 2666</a>
-      <a href="mailto:beaurainlorette@yahoo.com" class="button block margin-bottom hover-theme" style="border-radius:0"><i class="far fa-envelope text-theme margin-right xlarge hover-hover"></i> beaurainlorette@yahoo.com</a>
-    </div>
-    <hr>
-
-    <!-- *** Parking Banner *** -->
-    <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
-      <i class="fas fa-car center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
-      <div class="banner xlarge col s8">
-        Free Parking on Premises.
-      </div>
-    </div>
-    <hr>
-
-    <!-- *** Parking Image *** -->
-    <div class="card-4 display-container">
-      <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
-      <img src="images/parking.jpg" alt="parking Blougans B&B" style="border-radius:0" loading="lazy">
-    </div>
-    <hr>
-
-    <!-- *** Footer *** -->
-    <footer class="padding-16 theme-d4 center margin-top">
-      <h5>Find Us On</h5>
-      <div class="xlarge">
-        <a href="https://m.facebook.com/profile.php?id=264915840235942"><i class="fa fa-facebook-official hover-opacity xxlarge card-4 padding text-white" style="border-radius:9px;box-shadow:2px 2px 15px white"></i></a>
-      </div>
+  <!-- *** TODO: Add correct images Rooms *** -->
+  <div class="card-4">
+    <div class="container" id="rooms">
+      <h3>Rooms</h3>
       <p>
-        Developer <a href="https://www.linkedin.com/in/ryan-els-670045163/" class="text-white hover-theme" style="text-decoration: none;">Ryan Els</a>
+        All rooms have en-suite facilities and air-conditioning. The rooms are also equipped with a bar fridge, built-in safe,
+        hair dryer and a coffee station.
       </p>
-    </footer>
+    </div>
 
+    <div class="row-padding padding-16">
+      <!-- *** Room 1 *** -->
+      <div class="half margin-bottom">
+        <div class="room card-4">
+          <img src="images/room1.jpg" alt="Room 1 Blougans B&B" loading="lazy">
+        </div>
+        <div class="container white">
+          <h4>Room 1</h4>
+          <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
+          <p class="large">
+            <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
+          </p>
+          <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme padding-8 medium">Book Now</a>
+        </div>
+      </div>
+      <!-- *** Room 2 *** -->
+      <div class="half margin-bottom">
+        <div class="room card-4">
+          <img src="images/room2.jpg" alt="Room 2 Blougans B&B" loading="lazy">
+        </div>
+        <div class="container white">
+          <h4>Room 2</h4>
+          <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
+          <p class="large">
+            <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
+          </p>
+          <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme padding-8 medium">Book Now</a>
+        </div>
+      </div>
+      <!-- *** Room 3 *** -->
+      <div class="half margin-bottom">
+        <div class="room card-4">
+          <img src="images/room3.jpg" alt="Room 3 Blougans B&B" loading="lazy">
+        </div>
+        <div class="container white">
+          <h4>Room 3</h4>
+          <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
+          <p class="large">
+            <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
+          </p>
+          <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme padding-8 medium">Book Now</a>
+        </div>
+      </div>
+      <!-- *** Room 4 *** -->
+      <div class="half margin-bottom">
+        <div class="room card-4">
+          <img src="images/room4.jpg" alt="Room 4 Blougans B&B" loading="lazy">
+        </div>
+        <div class="container white">
+          <h4>Room 4</h4>
+          <h6 class="opacity">From <span style="color:red;text-decoration:line-through">R550</span> R495 pps</h6>
+          <p class="large">
+            <i class="fas fa-bath margin-right"></i><i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
+          </p>
+          <a href="https://book.nightsbridge.com/29212" class="button block theme-d3 margin-bottom hover-theme padding-8 medium">Book Now</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <script>
 
-    function showContent() {
-      document.getElementById("content").style.display = "block";
-      let next = loadImages('images/carousel/14.jpg')
+  <!-- *** Bar Banner *** -->
+  <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
+    <i class="fas fa-glass-cheers center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
+    <div class="banner xlarge col s8">
+      Licensed Bar On Premises.
+    </div>
+  </div>
 
-      if (next) {
-        console.log(next)
-        loadImages('images/parking.jpg')
-      }
-    }
 
-    let image = document.getElementById('carousel')
+  <!-- *** Bar Image *** -->
+  <div class="card-4 display-container" id="bar">
+    <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
+    <img src="images/bar.jpg" alt="bar image Blougans B&B" loading="lazy">
+  </div>
+  <hr>
 
-    function loadImages(url) {
-      image.src = url
-      image.onload = () => {
-        image.classList.add('hide')
-      }
-      return image.complete
-    }
+  <!-- *** About *** -->
+  <div class="row-padding margin-bottom card-4 theme-l5" id="about">
+    <div class="col l6 12 large">
+      <h3>About</h3>
+      <p>
+        Blougans is an established bed and breakfast with a four star rating.
+        We are situated in Gansbaai, the home of the <i>Great White Shark.</i>
+        Your room leads out to a balcony overlooking the <i>Walker Bay Whale Nature Reserve.</i>
+      </p>
+      <p>
+        Here you can make yourself feel at home and enjoy all the sea has to offer.
+        A short walk from your room will take you to the sea where you can take a breath-taking walk along the coast.
+        In the one direction you will find the harbour which you can explore. Don't forget to try the fish and chips.
+        In the other direction you will find a pleasant beach where you can take a swim or work on your tan. You might get lucky and see whales playing up close.
+      </p>
+      <p>
+        Back at Blougans you can relax in the guest area with a few drinks and watch the sun set over the sea while braaing a steak on the coals. It is a good time to connect with family and friends back home over our super fast wifi network.
+      </p>
+    </div>
+    <!-- *** Map *** -->
+    <iframe
+      id="map"
+      height="100%"
+      alt="map Blougans B&B"
+      class="col l6 12 margin-bottom margin-top"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCUWvaDWXVPmirhVlLIVH523Gtct-KWkWY
+      &q=17+Blougans+St,+Perlemoenbaai,+Gansbaai" allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+  <hr>
 
-  </script>
+  <!-- *** Jacuzzzi Image *** -->
+  <div class="card-4 display-container" id="jacuzzi">
+    <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
+    <img src="images/jacuzzi.jpg" alt="jacuzzi outside Blougans B&B" loading="lazy">
+  </div>
+
+
+  <!-- *** Payment Banner *** -->
+  <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
+    <i class="fab fa-cc-mastercard center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
+    <div class="banner xlarge col s8">
+      We Accept Card Payments.
+    </div>
+  </div>
+
+  <!-- slider -->
+  <div class="card-4 scrollmenu" id="slider"></div>
+  <hr>
+  <!-- *** Contacts *** -->
+  <div class="row-padding margin-bottom large center card-4" id="contact">
+    <h3>Contact</h3>
+    <a href="tel:+27822185355" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 82 218 5355</a>
+    <a href="tel:+27716581291" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 71 658 1291</a>
+    <a href="tel:+27764102666" class="button third margin-bottom padding hover-theme"><i class="fas fa-mobile-alt text-theme margin-right xlarge"></i>+27 76 410 2666</a>
+    <a href="mailto:beaurainlorette@yahoo.com" class="button block margin-bottom hover-theme" style="border-radius:0"><i class="far fa-envelope text-theme margin-right xlarge hover-hover"></i> beaurainlorette@yahoo.com</a>
+  </div>
+
+  <!-- *** Parking Banner *** -->
+  <div class="row panel theme-l1 leftbar rightbar padding-16 card-4">
+    <i class="fas fa-car center theme-d4 padding margin-right card-4 padding-16 xxlarge col s3" style="border-radius:9px"></i>
+    <div class="banner xlarge col s8">
+      Free Parking on Premises.
+    </div>
+  </div>
+
+  <!-- *** Parking Image *** -->
+  <div class="card-4 display-container" id="parking">
+    <a href="https://book.nightsbridge.com/29212" class="medium button theme-d2 hover-theme display-left margin-left card-4" id="check">Availability</a>
+    <img src="images/parking.jpg" alt="parking Blougans B&B" loading="lazy">
+  </div>
+
+  <!-- *** Footer *** -->
+  <footer class="padding-16 theme-d4 center margin-top">
+    <h5><a href="https://book.nightsbridge.com/29212" class="button">Book Now</a></h5>
+  </footer>
+
+
+
+  <script src="main.js" type="module" defer></script>
+
 
 </body>
 </html>
