@@ -1,4 +1,4 @@
 # blougans.com
-<img src="images/breakfast-table.jpg" width="100%" height="auto">
+<img src="images/breakfast-table.jpg">
 
 Thank you.
