@@ -1,6 +1,6 @@
 # blougans.com
 <img src="images/entrance.jpg">
-view emo at www.blougans.com
+view demo at www.blougans.com
 It finally works.
 
 Thank you.
