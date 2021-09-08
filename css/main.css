@@ -137,3 +137,71 @@ div.scrollmenu img {
   }
 }
 
+.stretched {
+  width: 100%;
+}
+
+
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner {
+  font-size:4vw;
+}
+i.fas, i.fab {
+  font-size:5vw;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: block;
+    margin: auto;
+  }
+  .banner {
+  font-size:3vw;
+}
+i.fas, i.fab {
+  font-size: 4vw;
+}
+
+  #mainContent {
+    display: flex;
+    width: 100vw;
+    height: aut;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+  #main,
+  #jacuzzi,
+  #parking,
+  .mainSet {
+    aspect-ratio: 1188/792;
+    max-height: 95vh;
+    width: auto;
+  }
+
+  #bar {
+    aspect-ratio: 1024/683;
+    max-height: 95vh;
+    width: auto;
+  }
+
+  .sticker-gallery {
+    max-height: 90vh;
+    width: auto;
+  }
+
+  iframe {
+    max-height: 95vh;
+    width: auto;
+  }
+}
