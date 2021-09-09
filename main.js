@@ -1,23 +1,3 @@
-let observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(entry => {
-    console.log(entry.target);
-    console.log(entry.isIntersecting);
-  //  });
-  //});
-      if (entry.isIntersecting) {
-        // do this when the element enters the viewport
-        loadElement(entry.target);
-        // stop watching
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-  
-  function loadElement(element) {
-    const src = element.getAttribute('data-src');
-    element.src = src;
-  }
-  
 function addSlider(){
     document.getElementById('slider').innerHTML = `
 <picture>
