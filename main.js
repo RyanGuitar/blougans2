@@ -128,8 +128,4 @@ window.onload = () => {
           alt="Blougans B&B gallery" loading="lazy">
       </picture>
 `;
-    document.getElementById('heading').innerHTML = `
-    <div id="mainHeading">Blougans B&B</div>
-    <div id="subHeading">Gansbaai - South Africa</div>
-  `
 }
