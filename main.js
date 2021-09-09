@@ -1,4 +1,5 @@
-window.onload = () => document.getElementById('slider').innerHTML = `
+window.onload = () => {
+    document.getElementById('slider').innerHTML = `
 <picture>
         <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
         images/carousel/1_ydhq8k_c_scale,w_200.jpg 200w,
@@ -126,4 +127,9 @@ window.onload = () => document.getElementById('slider').innerHTML = `
           src="images/carousel/14_rq248x_c_scale,w_1024.jpg" class="sticker-gallery sliderImages"
           alt="Blougans B&B gallery" loading="lazy">
       </picture>
-`
+`;
+    document.getElementById('heading').innerHTML = `
+    <div id="mainHeading">Blougans B&B</div>
+    <div id="subHeading">Gansbaai - South Africa</div>
+  `
+}
