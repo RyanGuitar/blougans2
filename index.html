@@ -42,6 +42,8 @@
     height: 100vh;
   }
 
+
+
   @media only screen and (max-width: 2000px) {
     #headerImage {
       background-image: url("images/breakfast-area_gkzpvq_c_scale,w_615.jpg");
@@ -64,6 +66,21 @@
     #headerImage {
       background-image: url("images/breakfast-area_gkzpvq_c_scale,w_200.jpg");
     }
+  }
+
+  @media (orientation:landscape){
+    #kayak-container {
+    position:absolute;
+    left:10%;
+    top:25%;
+    transform:translate(-50%,-50%);
+    width:12vw;
+    height:auto;
+}
+#kayakBanner {
+    max-width:60vw;
+    height:auto;
+}
   }
 
 
@@ -141,12 +158,26 @@
     </div>
   </div>
 
+  <div id="kayak-container" style='text-align: center' itemscope itemtype="http://schema.org/Organization">
+    <span style='display: none' itemprop="name">Blougans B&B</span>
+    <div id="kayak-inner" itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating">
+      <a href='https://www.kayak.co.uk/Gansbaai-Hotels-Blougans-B-B.2047794.ksp' target='_blank'>
+        <img id="kayak" height="auto" width="100px" src='https://content.r9cdn.net/seo-res/badges/v3/LIGHT_MEDIUM_TRAVEL_AWARDS.png'/>
+      </a>
+      <p style='color:white; font-size: 14px; font-family:Arial, Helvetica, sans-serif; margin: 4px 0;'>Traveler Rating: <span itemprop="ratingvalue">9.1</span><meta itemprop="bestRating" content="10"></meta><meta itemprop="ratingCount" content='69'></meta> Excellent</p>
+    </div>
+  </div>
+
   <div class="container" id="mainContent">
     <hr>
-    <div id="logoImage">
-      <img src="images/safestay.png" alt="safe stay logo" width="192" height="44" id="logo" loading="lazy">
+    <div id="kayakBannerContainer">
+      <img id="kayakBanner" src="DARK_SMALL_TRAVEL_AWARDS.png" alt="travel awards" width="919" height="92" class="kayakBanner" loading="lazy">
     </div>
     <hr>
+   <!--<div id="logoImage">
+      <img src="images/safestay.png" alt="safe stay logo" width="192" height="44" id="logo" loading="lazy">
+    </div>-->
+    
     <div class="card-4 display-container" id="main">
       <a href="https://book.nightsbridge.com/29212"
         class="button theme-d2 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
@@ -164,8 +195,9 @@
         images/main_y4dcqi_c_scale,w_1188.jpg 1188w" src="images/main_y4dcqi_c_scale,w_1188.jpg" alt="main Blougans B&"
           loading="lazy" class="mainSet">
       </picture>
-    </div>
 
+    </div>
+   
     <hr>
     <div class="row panel theme-l1 padding-16 card-4 stretched bannerContainer">
       <i class="fas fa-wifi center theme-d4 padding margin-right card-4 padding-16 col s3"

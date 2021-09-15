@@ -91,6 +91,25 @@ div.scrollmenu img {
     color: #fff;
     text-shadow: 7px 7px 10px #000
 }
+#kayak-container {
+    position:absolute;
+    left:75%;
+    top:85%;
+    transform:translate(-50%,-50%);
+    width:28vw;
+    height:auto;
+}
+
+#kayakBannerContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#kayakBanner {
+    max-width:80vw;
+    height:auto;
+}
+
 
 #mainHeading {
     font-size: 7vw
