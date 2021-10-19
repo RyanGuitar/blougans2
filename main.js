@@ -1,18 +1,5 @@
 function addSlider(){
     document.getElementById('slider').innerHTML = `
-<picture>
-        <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
-        images/carousel/1_ydhq8k_c_scale,w_200.jpg 200w,
-        images/carousel/1_ydhq8k_c_scale,w_431.jpg 431w,
-        images/carousel/,w_592.jpg 592w,
-        images/carousel/1_ydhq8k_c_scale,w_712.jpg 712w,
-        images/carousel/1_ydhq8k_c_scale,w_821.jpg 821w,
-        images/carousel/1_ydhq8k_c_scale,w_941.jpg 941w,
-        images/carousel/1_ydhq8k_c_scale,w_1123.jpg 1123w,
-        images/carousel/1_ydhq8k_c_scale,w_1154.jpg 1154w,
-        images/carousel/1_ydhq8k_c_scale,w_1188.jpg 1188w" src="images/carousel/1_ydhq8k_c_scale,w_1188.jpg"
-          class="sticker-gallery sliderImages" alt="Blougans B&B gallery" loading="lazy">
-      </picture>
       <picture>
         <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
           images/carousel/2_lgynbo_c_scale,w_200.jpg 200w,
