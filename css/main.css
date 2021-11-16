@@ -4,9 +4,9 @@ body {
     height: 100vh
 }
 
-img {
+/*img {
     width: 100%
-}
+}*/
 
 .button {
     border-radius: 9px
@@ -66,8 +66,8 @@ div.scrollmenu img {
 
 .room,
 .roomImages {
-    padding: 10px;
-    aspect-ratio: 1024/768;
+    /*padding: 10px;*/
+    aspect-ratio: 828/621;
     width: 100%;
     height: auto
 }
