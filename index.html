@@ -41,6 +41,12 @@
     width: 100vw;
     height: 100vh;
   }
+  .roomNumber {
+    font-size:20px;
+  }
+  .roomPrice {
+    font-size:14px;
+  }
 
 
 
@@ -162,7 +168,7 @@
     <span style='display: none' itemprop="name">Blougans B&B</span>
     <div id="kayak-inner" itemprop=aggregateRating itemscope itemtype="http://schema.org/AggregateRating">
       <a href='https://www.kayak.co.uk/Gansbaai-Hotels-Blougans-B-B.2047794.ksp' target='_blank' rel="noopener">
-        <img id="kayak" height="auto" width="100px" src='https://content.r9cdn.net/seo-res/badges/v3/LIGHT_MEDIUM_TRAVEL_AWARDS.png' alt="kayak award" loading="lazy"/>
+        <img id="kayak" height="100px" width="100px" src='https://content.r9cdn.net/seo-res/badges/v3/LIGHT_MEDIUM_TRAVEL_AWARDS.png' alt="kayak award" loading="lazy"/>
       </a>
       <p style='color:white; font-size: 14px; font-family:Arial, Helvetica, sans-serif; margin: 4px 0;'>Traveler Rating: <span itemprop="ratingvalue">9.1</span><meta itemprop="bestRating" content="10"></meta><meta itemprop="ratingCount" content='69'></meta> Excellent</p>
     </div>
@@ -174,13 +180,10 @@
       <img id="kayakBanner" src="DARK_SMALL_TRAVEL_AWARDS.png" alt="travel awards" width="919" height="92" class="kayakBanner" loading="lazy">
     </div>
     <hr>
-   <!--<div id="logoImage">
-      <img src="images/safestay.png" alt="safe stay logo" width="192" height="44" id="logo" loading="lazy">
-    </div>-->
     
     <div class="card-4 display-container" id="main">
       <a href="https://book.nightsbridge.com/29212"
-        class="button theme-d2 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
+        class="button theme-d4 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
 
       <picture>
         <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
@@ -199,10 +202,10 @@
     </div>
    
     <hr>
-    <div class="row panel theme-l1 padding-16 card-4 stretched bannerContainer">
+    <div class="row panel theme-d2 padding-16 card-4 stretched bannerContainer">
       <i class="fas fa-wifi center theme-d4 padding margin-right card-4 padding-16 col s3"
         style="border-radius:9px"></i>
-      <div class="banner col s8 wifi center">
+      <div class="banner col s8 wifi center theme-d2">
         Free Super Fast Wifi
       </div>
     </div>
@@ -220,24 +223,23 @@
         <div class="half margin-bottom">
           <div class="room card-4">
 
-            <picture>
+            <picture class="roomImages">
               <img sizes="(max-width: 1024px) 100vw, 1024px" srcset="
                 images/room1_jols1o_c_scale,w_200.jpg 200w,
                 images/room1_jols1o_c_scale,w_573.jpg 573w,
-                images/room1_jols1o_c_scale,w_828.jpg 828w,
-                images/room1_jols1o_c_scale_w_1024.webp 1024w" src="images/room1_jols1o_c_scale_w_1024.webp"
+                images/room1_jols1o_c_scale,w_828.jpg 828w" src="images\room1_jols1o_c_scale,w_1024-min.jpg"
                 alt="Room 1 Blougans B&B" loading="lazy" class="roomImages">
             </picture>
           </div>
           <div class="container white">
-            <h4>Room 1</h4>
-            <h6 class="opacity">From <span>R550</span> pps</h6>
+            <div class="roomNumber">Room 1</div>
+            <div class="roomPrice">From <span>R550</span> pps</div>
             <p class="large">
               <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i
                 class="fas fa-tv"></i>
             </p>
             <a href="https://book.nightsbridge.com/29212"
-              class="button block theme-d3 margin-bottom hover-theme padding-8 book">Book Now</a>
+              class="button block theme-d4 margin-bottom hover-theme padding-8 book">Book Now</a>
           </div>
         </div>
         <div class="half margin-bottom">
@@ -253,14 +255,14 @@
             </picture>
           </div>
           <div class="container white">
-            <h4>Room 2</h4>
-            <h6 class="opacity">From <span>R550</span> pps</h6>
+            <div class="roomNumber">Room 2</div>
+            <div class="roomPrice">From <span>R550</span> pps</div>
             <p class="large">
               <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i
                 class="fas fa-tv"></i>
             </p>
             <a href="https://book.nightsbridge.com/29212"
-              class="button block theme-d3 margin-bottom hover-theme padding-8 book">Book Now</a>
+              class="button block theme-d4 margin-bottom hover-theme padding-8 book">Book Now</a>
           </div>
         </div>
         <div class="half margin-bottom">
@@ -276,14 +278,14 @@
             </picture>
           </div>
           <div class="container white">
-            <h4>Room 3</h4>
-            <h6 class="opacity">From <span>R550</span> pps</h6>
+            <div class="roomNumber">Room 3</div>
+            <div class="roomPrice">From <span>R550</span> pps</div>
             <p class="large">
               <i class="fas fa-shower margin-right"></i> <i class="fas fa-wifi margin-right"></i> <i
                 class="fas fa-tv"></i>
             </p>
             <a href="https://book.nightsbridge.com/29212"
-              class="button block theme-d3 margin-bottom hover-theme padding-8 book">Book Now</a>
+              class="button block theme-d4 margin-bottom hover-theme padding-8 book">Book Now</a>
           </div>
         </div>
         <div class="half margin-bottom">
@@ -299,29 +301,29 @@
             </picture>
           </div>
           <div class="container white">
-            <h4>Room 4</h4>
-            <h6 class="opacity">From <span>R550</span> pps</h6>
+            <div class="roomNumber">Room 4</div>
+            <div class="roomPrice">From <span>R550</span> pps</div>
             <p class="large">
               <i class="fas fa-bath margin-right"></i><i class="fas fa-wifi margin-right"></i> <i class="fas fa-tv"></i>
             </p>
             <a href="https://book.nightsbridge.com/29212"
-              class="button block theme-d3 margin-bottom hover-theme padding-8 book">Book Now</a>
+              class="button block theme-d4 margin-bottom hover-theme padding-8 book">Book Now</a>
           </div>
         </div>
       </div>
     </div>
     <hr>
-    <div class="row panel theme-l1 padding-16 card-4 stretched bannerContainer">
+    <div class="row panel theme-d2 padding-16 card-4 stretched bannerContainer">
       <i class="fas fa-glass-cheers center theme-d4 padding margin-right card-4 padding-16 col s3"
         style="border-radius:9px"></i>
-      <div class="banner col s8 center">
+      <div class="banner col s8 center theme-d2">
         Licensed Bar On Premises
       </div>
     </div>
     <hr>
     <div class="card-4 display-container" id="bar">
       <a href="https://book.nightsbridge.com/29212"
-        class="button theme-d2 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
+        class="button theme-d4 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
       <picture>
         <img sizes="(max-width: 1024px) 100vw, 1024px" srcset="
           images/bar_xkfvcu_c_scale,w_200.jpg 200w,
@@ -362,7 +364,7 @@
     <hr>
     <div class="card-4 display-container" id="jacuzzi">
       <a href="https://book.nightsbridge.com/29212"
-        class="button theme-d2 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
+        class="button theme-d4 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
         <picture>
           <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
           images/carousel/1_ydhq8k_c_scale,w_200.jpg 200w,
@@ -378,10 +380,10 @@
         </picture>
     </div>
     <hr>
-    <div class="row panel theme-l1 padding-16 card-4 stretched bannerContainer">
+    <div class="row panel theme-d2 padding-16 card-4 stretched bannerContainer">
       <i class="fab fa-cc-mastercard center theme-d4 padding margin-right card-4 padding-16 col s3"
         style="border-radius:9px"></i>
-      <div class="banner col s8 center">
+      <div class="banner col s8 center theme-d2">
         We Accept Card Payments
       </div>
     </div>
@@ -404,16 +406,16 @@
         beaurainlorette@yahoo.com</a>
     </div>
     <hr>
-    <div class="row panel theme-l1 padding-16 card-4 stretched bannerContainer">
+    <div class="row panel theme-d2 padding-16 card-4 stretched bannerContainer">
       <i class="fas fa-car center theme-d4 padding margin-right card-4 padding-16 col s3" style="border-radius:9px"></i>
-      <div class="banner col s8 center">
+      <div class="banner col s8 center theme-d2">
         Free Parking on Premises
       </div>
     </div>
     <hr>
     <div class="card-4 display-container" id="parking">
       <a href="https://book.nightsbridge.com/29212"
-        class="button theme-d2 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
+        class="button theme-d4 hover-theme display-left margin-left card-4 checkAvail">Availability</a>
       <picture>
         <img sizes="(max-width: 1188px) 100vw, 1188px" srcset="
         images/parking_v0aikt_c_scale,w_200.jpg 200w,
@@ -429,7 +431,7 @@
     </div>
     <hr>
     <footer class="padding-16 theme-d4 center margin-top stretched">
-      <h5><a href="https://book.nightsbridge.com/29212" class="button book">Book Now</a></h5>
+      <div><a href="https://book.nightsbridge.com/29212" class="button book">Book Now</a></div>
     </footer>
   </div>
 
