@@ -117,4 +117,18 @@ function addSlider(){
 `;
 }
 
-window.addEventListener('load', addSlider)
+function addRoomPrices(){
+  const roomPrices_html = `
+      <span>Single R650</span>
+      <span>Sharing R550 pp</span>
+  `
+  const prices = document.querySelectorAll('.roomPrices')
+  prices.forEach(price => {
+    price.innerHTML = roomPrices_html
+  })
+}
+
+window.addEventListener('load', () => {
+  addSlider()
+  addRoomPrices()
+})
