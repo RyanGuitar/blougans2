@@ -119,8 +119,8 @@ function addSlider(){
 
 function addRoomPrices(){
   const roomPrices_html = `
-      <span>Single R950</span>
-      <span>Sharing R750 pp</span>
+      <span>Single R750</span>
+      <span>Sharing R650 pp</span>
   `
   const prices = document.querySelectorAll('.roomPrices')
   prices.forEach(price => {
