@@ -117,7 +117,7 @@ function addSlider(){
 `;
 }
 
-function addRoomPrices(){
+/*function addRoomPrices(){
   const roomPrices_html = `
       <span>Single R750</span>
       <span>Sharing R650 pp</span>
@@ -131,4 +131,4 @@ function addRoomPrices(){
 window.addEventListener('load', () => {
   addSlider()
   addRoomPrices()
-})
+})*/
